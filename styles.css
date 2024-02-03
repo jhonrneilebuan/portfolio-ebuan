@@ -250,6 +250,23 @@ footer {
   }
 }
 
+@keyframes colorChange {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(0, 195, 255);
+  }
+  100% {
+    color: rgb(4, 0, 255);
+  }
+}
+
+.home h2:nth-child(3) {
+  animation: colorChange 5s infinite; 
+}
+
+
 #projects .image-container img,
 #blogs .image-container img {
   width: 100%;
@@ -466,6 +483,30 @@ footer {
   height: auto;
 }
 
+.brand h1 {
+  padding-left: 40px; 
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.brand h1 span {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  animation: scaleAnimation 2s infinite;
+}
+
+
+
 #header .header {
   min-height: 15vh; 
   background-color: #003366;
@@ -607,6 +648,28 @@ footer {
   }
 
   #header .nav-list ul a {
-    font-size: 1.5rem;
+    font-size: 1.2rem; 
+  }
+
+  #header .nav-list ul a::after {
+    font-size: 6rem; 
+  }
+
+  #header .hamburger {
+    margin-right: 10px; 
+  }
+
+  #about .about {
+    padding: 40px 20px; 
+  }
+
+  #about .col-left {
+    width: 100px; 
+    height: 100px; 
+  }
+
+  #about .col-right h1.section-title {
+    font-size: 1.2rem; 
   }
 }
+
